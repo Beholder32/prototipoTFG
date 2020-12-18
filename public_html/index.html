@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Prototipo para el proyecto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/programa.js"></script>
+        <style>
+            .box{
+                width: 15%;
+                
+                display: inline-block;
+                margin-left: 2%;
+                border: 1px solid black;
+                text-align: left;
+            }
+            
+            .box h4{
+                text-align: center;
+            }
+            
+            #tituloPrograma{
+                text-align: center;
+                color: red;
+            }
+            #logo{
+                width: 150px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <h1>Sistema para elejir programa deportivo</h1>
+        <img id="logo" src="img/casco.jpg">
+        <br/>
+        <h4>Selecciona programa de ejercicios</h4>
+        <select id="programas" name="program" onchange="seleccionarPrograma()">
+            <option value="Iron Man">Iron Man</option>
+            <option value="Military Fit">Military Fit</option>
+            <option value="Boxer Prime">Broxer Prime</option>
+        </select>
+        <br/>
+        <br/>
+        <br/>
+        <h2 id="tituloPrograma"></h2>
+        <br/>
+        <br/>
+        <div style="display: flex;">
+            <div class="box">
+                <h4>Lunes</h4>
+                <br/>
+                <ul id="mon">
+
+                </ul>
+            </div>
+            <div class="box">
+                <h4>Martes</h4>
+                <br/>
+                <ul id="tus">
+
+                </ul>
+            </div>
+            <div class="box">
+                <h4>Miécoles</h4>
+                <br/>
+                <ul id="wend">
+
+                </ul>
+            </div>
+            <div class="box">
+                <h4>Jueves</h4>
+                <br/>
+                <ul id="thus">
+
+                </ul>
+            </div>
+            <div class="box">
+                <h4>Viernes</h4>
+                <br/>
+                <ul id="fry">
+
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
